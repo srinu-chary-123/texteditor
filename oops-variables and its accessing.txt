@@ -1,0 +1,117 @@
+oops concepts key points
+self-it is a reference variable towards current class object
+refrence variable-which stores the hashcode of that obj
+1. variables to store the data:
+. static variables
+.non static variables
+.global variables
+
+* static variables:
+WHICH ARE CREATED INSIDE THE CLASS AND ABOVE THE CONSTRUCTOR
+>how to access s.v inside the class(inside the method):
+by using class name
+class test:
+     a=lokesh
+     b=vijayan
+     def add():
+         print(test.a)
+         print(test.b)
+>how to access s.v outside the class:
+it can be done in two ways:
+by using class name
+by using refrence varaible
+  :class test:
+     a=lokesh
+     b=vijayan
+     def add():
+         print(test.a)
+         print(test.b)
+s1=test()
+s1.add()
+print(test.a)
+print(test.b)
+print(s1.a)
+print(s1.b)
+NON STATIC VARIABLES:
+it is written inside the method 
+how to access the n.s.v inside the class?
+by using (self) reference variable
+:class test:
+     a=lokesh
+     b=vijayan
+     def add(self):
+         self.a=lokesh
+         self.b=vijayan
+         print(self.a)
+         print(self.b)
+>how to access the non s.v outside the class?
+by creating reference variable only:
+class test:
+     a=lokesh
+     b=vijayan
+     def add(self):
+         self.a=lokesh
+         self.b=vijayan
+         print(self.a)
+         print(self.b)
+t1.test()
+t1.add()
+print(t1.a)
+print(t1.b)
+
+local variables :
+we can define local variables within the method .
+just assigning the value
+but main imp point is:when u assigned the local variable it cannot access to the other methods .
+see >
+class test:
+       a=lokesh
+       b=vijayan
+     def add():
+           self.sid=101
+           class test:
+     a=lokesh
+     b=vijayan
+     def add(self):
+         self.a=lokesh
+         self.b=vijayan
+         print(self.a)
+         print(self.b)
+         y=20
+         print(y)
+     def sub():
+         self.a=lokesh
+         self.b=vijayan
+         print(self.a)
+         print(self.b)
+         PRINT(Y)
+         IT IS NOT DEFINED.
+t1=test()
+t1.add()
+t2.sub()
+
+local variables cant access to other methods ...only inside the method it is accesible
+
+
+
+
+
+        
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
